@@ -1,0 +1,9 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Prime NG style */
+.p-inputtext {
+  padding: 0.375rem;
+  width: 100%;
+}
