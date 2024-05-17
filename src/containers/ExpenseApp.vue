@@ -3,7 +3,6 @@ import ExpenseForm from '../components/ExpenseForm.vue'
 import ExpenseList from '../components/ExpenseList.vue'
 import ExpenseChart from '../components/ExpenseChartBar.vue'
 import ExpenseChartPolar from '../components/ExpenseChartPolar.vue'
-import Footer from '../components/AppFooter.vue'
 import { onMounted, ref } from 'vue'
 
 const chartChanged = ref(false)
@@ -45,7 +44,7 @@ onMounted(() => {
 
 <template>
     <main class="max-w-screen-xl mx-auto mt-2 px-10 flex flex-col gap-3">
-        <h1 class="text-center font-bold text-xl">Expense Tracker</h1>
+        <h2 class="text-center font-bold text-lg">Expense Form</h2>
         <ExpenseForm :on-add-expense="addExpense" />
         <div class="flex flex-col">
             <div>
@@ -64,5 +63,4 @@ onMounted(() => {
             </div>
         </div>
     </main>
-    <Footer />
 </template>
