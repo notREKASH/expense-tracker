@@ -51,12 +51,19 @@ const submitExpense = (event) => {
     } else if (isNaN(amount.value)) {
         alert.log('Please enter a valid amount')
     } else {
+
+        const formatDate = (date) => {
+            return new Date(date).toLocaleDateString('fr-FR', {
+                year: 'numeric', month: '2-digit', day: '2-digit'
+            })
+        }
+
         const expense = {
             id: Math.floor(Math.random() * 1000),
             amount: amount.value,
             category: category.value.name,
             wording: wording.value,
-            date: date.value
+            date: formatDate(date.value)
         }
 
         props.onAddExpense(expense)
