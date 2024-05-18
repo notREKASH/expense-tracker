@@ -2,6 +2,7 @@ export const CategoryService = {
   getData() {
     return [
       // Nourriture et Boissons
+      { name: "Courses", code: "courses" },
       { name: "Restaurants", code: "restaurants" },
       { name: "Fast Food", code: "fast-food" },
       { name: "Cafés", code: "cafes" },
@@ -15,6 +16,8 @@ export const CategoryService = {
       { name: "Alcools", code: "alcools" },
       { name: "Snacks", code: "snacks" },
       { name: "Boulangeries", code: "boulangeries" },
+      { name: "Pâtisseries", code: "patisseries" },
+      { name: "Boucheries", code: "boucheries" },
 
       // Logement
       { name: "Loyer", code: "loyer" },
