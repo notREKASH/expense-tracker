@@ -83,34 +83,38 @@ const submitExpense = (event) => {
         <div class="flex flex-col gap-4 p-4 rounded-lg bg-gray-100 shadow-lg">
             <div class="card flex  justify-center">
                 <div class="flex flex-col gap-1 w-full">
-                    <label for="amount">Amount</label>
-                    <InputText id="amount" v-model="amount" class="p-1.5" placeholder="39€" />
+                    <label for="amount">{{ $t("message.form.label.amount") }}</label>
+                    <InputText id="amount" v-model="amount" class="p-1.5"
+                        :placeholder='$t("message.form.label.amount-placeholder")' />
                 </div>
             </div>
             <div class="card flex  justify-center">
                 <div class="flex flex-col gap-1 w-full">
-                    <label for="category">Category</label>
+                    <label for="category">{{ $t("message.form.label.category") }}</label>
                     <AutoComplete v-model="category" :suggestions="filteredCategories" field="name" @complete="search"
-                        placeholder="Select a category" class="w-full" />
+                        :placeholder='$t("message.form.label.category-placeholder")' class="w-full" />
                 </div>
             </div>
             <div class="card flex  justify-center">
                 <div class="flex flex-col gap-1 w-full">
-                    <label for="wording">Wording</label>
-                    <InputText id="wording" v-model="wording" aria-describedby="wording-help" class="p-1.5" />
-                    <small id="wording-help">Please enter the wording of the expense</small>
+                    <label for="wording">{{ $t("message.form.label.wording") }}</label>
+                    <InputText id="wording" v-model="wording" aria-describedby="wording-help"
+                        :placeholder='$t("message.form.label.wording-placeholder")' class="p-1.5" />
+                    <small id="wording-help">{{ $t('message.form.label.wording-helper') }}</small>
                 </div>
             </div>
             <div class="card flex justify-center">
                 <div class="flex flex-col gap-1 w-full">
-                    <label for="date">Date</label>
+                    <label for="date">{{ $t("message.form.label.date") }}</label>
                     <Calendar id="date" v-model="date" dateFormat="dd/mm/yy" />
-                    <small id="date-help">Please enter the date of the expense</small>
+                    <small id="date-help">{{ $t('message.form.label.date-helper') }}</small>
                 </div>
             </div>
         </div>
         <div class="flex mt-4 justify-end">
-            <Button type="submit" label="Add expense" text raised class="p-2" />
+            <Button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm">
+                {{ $t("message.form.button.submit") }}
+            </Button>
         </div>
     </form>
 </template>

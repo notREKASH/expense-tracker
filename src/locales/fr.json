@@ -1,0 +1,46 @@
+{
+  "message": {
+    "header-title": "Suivi des Dépenses",
+    "form": {
+      "title": "Formulaire de Dépense",
+      "label": {
+        "amount": "Montant",
+        "amount-placeholder": "39€",
+        "category": "Catégorie",
+        "category-placeholder": "Restaurant",
+        "wording": "Libellé",
+        "wording-helper": "Veuillez entrer le libellé de la dépense",
+        "wording-placeholder": "Déjeuner avec des amis",
+        "date": "Date",
+        "date-helper": "Veuillez entrer la date de la dépense (par défaut aujourd'hui)",
+        "description": "Description"
+      },
+      "button": {
+        "submit": "Ajouter Dépense"
+      }
+    },
+    "table": {
+      "title": "Tableau des Dépenses",
+      "header": {
+        "amount": "Montant",
+        "category": "Catégorie",
+        "wording": "Libellé",
+        "date": "Date",
+        "description": "Description"
+      }
+    },
+    "chart": {
+      "title": "Graphique des Dépenses",
+      "label": "Dépenses",
+      "x-axis": "Catégorie",
+      "y-axis": "Montant",
+      "button": {
+        "changed-to": "Changé en graphique de type {type}",
+        "type": {
+          "bar": "Barre",
+          "polar": "Polaire"
+        }
+      }
+    }
+  }
+}

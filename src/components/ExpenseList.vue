@@ -12,16 +12,16 @@ const props = defineProps({
 
 <template>
     <div class="flex flex-col gap-2">
-        <h2 class="text-center text-lg font-semibold">Expenses table</h2>
+        <h2 class="text-center text-lg font-semibold">{{ $t('message.table.title') }}</h2>
         <DataTable :value="props.expenses" sortMode="multiple" tableStyle="min-width: 50rem">
-            <Column field="amount" header="Amount" sortable style="width: 25%">
+            <Column field="amount" :header="$t('message.table.header.amount')" sortable style="width: 25%">
                 <template #body="slotProps">
                     {{ slotProps.data.amount }}€
                 </template>
             </Column>
-            <Column field="category" header="Category" sortable style="width: 25%"></Column>
-            <Column field="wording" header="Wording" sortable style="width: 25%"></Column>
-            <Column field="date" header="Date" sortable style="width: 25%"></Column>
+            <Column field="category" :header="$t('message.table.header.category')" sortable style="width: 25%"></Column>
+            <Column field="wording" :header="$t('message.table.header.wording')" sortable style="width: 25%"></Column>
+            <Column field="date" :header="$t('message.table.header.date')" sortable style="width: 25%"></Column>
             <Column field="id" header="Actions" style="width: 25%">
                 <template #body="slotProps">
                     <button @click="removeExpense(slotProps.data.id)"

@@ -1,6 +1,10 @@
+import i18n from "@/i18n";
+
+const { t } = i18n.global;
+
 const datasets = [
   {
-    label: "Expenses",
+    label: t("message.chart.label"),
     data: [],
     backgroundColor: "rgba(54, 162, 235, 0.2)",
     borderColor: "rgba(54, 162, 235, 1)",
@@ -14,14 +18,14 @@ const barOptions = {
     x: {
       title: {
         display: true,
-        text: "Category",
+        text: t("message.chart.x-axis"),
       },
     },
     y: {
       beginAtZero: true,
       title: {
         display: true,
-        text: "Amount",
+        text: t("message.chart.y-axis"),
       },
     },
   },

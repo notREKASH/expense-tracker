@@ -1,6 +1,10 @@
+import i18n from "@/i18n";
+
+const { t } = i18n.global;
+
 const datasets = [
   {
-    label: "Expenses",
+    label: t("message.chart.label"),
     data: [],
     backgroundColor: [
       "rgba(255, 99, 132, 0.2)",

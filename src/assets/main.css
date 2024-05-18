@@ -7,3 +7,21 @@
   padding: 0.375rem;
   width: 100%;
 }
+
+.p-inputswitch .p-inputswitch-slider {
+  background-image: url("../assets/fr-flag.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.p-inputswitch.p-highlight .p-inputswitch-slider {
+  background-image: url("../assets/en-flag.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.p-inputswitch-slider:before {
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.15);
+}

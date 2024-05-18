@@ -1,0 +1,46 @@
+{
+  "message": {
+    "header-title": "Expense Tracker",
+    "form": {
+      "title": "Expense Form",
+      "label": {
+        "amount": "Amount",
+        "amount-placeholder": "39$",
+        "category": "Category",
+        "category-placeholder": "Restaurant",
+        "wording": "Wording",
+        "wording-helper": "Please enter the wording of the expense",
+        "wording-placeholder": "Lunch with friends",
+        "date": "Date",
+        "date-helper": "Please enter the date of the expense (default is today)",
+        "description": "Description"
+      },
+      "button": {
+        "submit": "Add Expense"
+      }
+    },
+    "table": {
+      "title": "Expense table",
+      "header": {
+        "amount": "Amount",
+        "category": "Category",
+        "wording": "Wording",
+        "date": "Date",
+        "description": "Description"
+      }
+    },
+    "chart": {
+      "title": "Expense chart",
+      "label": "Expenses",
+      "x-axis": "Category",
+      "y-axis": "Amount",
+      "button": {
+        "changed-to": "Changed to {type} chart",
+        "type": {
+          "bar": "Bar",
+          "polar": "Polar"
+        }
+      }
+    }
+  }
+}
