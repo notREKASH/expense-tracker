@@ -16,10 +16,9 @@ const category = ref('')
 const wording = ref('')
 const date = ref('')
 
-// Set the current date as the default value for the date field
-date.value = new Date().toLocaleDateString('fr-FR', {
-    year: 'numeric', month: '2-digit', day: '2-digit'
-})
+// Set current date
+const currentDate = new Date();
+date.value = currentDate;
 
 // AutoComplete component
 const categories = ref([]);
