@@ -46,9 +46,9 @@ const search = (event) => {
 const submitExpense = (event) => {
     event.preventDefault()
     if (!amount.value || !category.value || !wording.value || !date.value) {
-        alert.log('Please fill all the fields')
+        alert('Please fill all the fields')
     } else if (isNaN(amount.value)) {
-        alert.log('Please enter a valid amount')
+        alert('Please enter a valid amount')
     } else {
 
         const formatDate = (date) => {

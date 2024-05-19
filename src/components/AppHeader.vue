@@ -37,14 +37,14 @@ const checked = ref(false);
 
 <style scoped>
 .p-inputswitch .p-inputswitch-slider {
-    background-image: url('../assets/fr-flag.png');
+    background-image: url('../assets/en-flag.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .p-inputswitch.p-highlight .p-inputswitch-slider {
-    background-image: url('../assets/en-flag.png');
+    background-image: url('../assets/fr-flag.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
