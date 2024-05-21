@@ -20,7 +20,6 @@ const addExpense = (expense) => {
 }
 
 const removeExpense = (id) => {
-    console.log('Removing expense with id:', id)
     expenses.value = expenses.value.filter((expense) => expense.id !== id)
     localStorage.setItem('expenses', JSON.stringify(expenses.value))
 }

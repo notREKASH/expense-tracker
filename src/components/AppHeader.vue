@@ -8,10 +8,8 @@ const { locale } = useI18n();
 
 const switchLanguage = () => {
     if (locale.value === 'en') {
-        console.log('Switching to French');
         locale.value = 'fr';
     } else {
-        console.log('Switching to English');
         locale.value = 'en';
     }
 };
